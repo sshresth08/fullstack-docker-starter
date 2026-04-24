@@ -49,3 +49,13 @@ docker-compose down
 # Stop + delete volumes (resets database)
 docker-compose down -v
 ```
+## Environment Variables
+
+Copy `.env.example` to `.env` before starting:
+
+| Variable | Default | Description |
+|----------|---------|-------------|
+| `POSTGRES_USER` | `dev` | Database user |
+| `POSTGRES_PASSWORD` | `dev` | Database password |
+| `POSTGRES_DB` | `app` | Database name |
+| `DATABASE_URL` | auto | Built from above values |
